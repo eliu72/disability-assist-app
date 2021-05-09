@@ -1,3 +1,4 @@
+
 html{
     scroll-behavior: smooth;
     font-size: 12px;
@@ -13,16 +14,21 @@ img{
 }
 
 h1{
-    font-family: Arial;
     font-style: normal;
+    text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 23px;
+}
+
+h3{
+    font-style: normal;
     text-align: left;
+    font-size: 16px;
+    line-height: 23px;
 }
 
 h4{
-    font-family: Arial;
     font-style: normal;
     font-weight: bold;
     font-size: 23px;
@@ -47,22 +53,43 @@ button{
     margin: 2% 0
 }
 
-.btn-purple{
+.find-location{
     color: #FDFDFF;
-    font-family: Arial;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 17px;
     line-height: 14px;
     background: #4F3AE4;
     border-radius: 30px;
-    width: 310px;
+    width: 315px;
+    height: 43px;
+    outline: 0;
+}
+
+select {
+    width: 100%;
+    font-size: 17px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    background-color: #FDFDFF;
+    height: 43px;
+}
+
+.btn-purple{
+    color: #FDFDFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 14px;
+    background: #4F3AE4;
+    border-radius: 30px;
+    width: 315px;
     height: 43px;
     outline: 0;
 }
 
 .btn-black{
-    width: 310px;
+    width: 315px;
     height: 43px;
     background: none;
     border: 2px solid #000000;
@@ -76,20 +103,61 @@ button{
     overflow-y: scroll;
 }
 
+.fa-check-circle{
+    color: green;
+    margin: 5% 0;
+    padding: 10px 170px;
+}
+
+.fa-facebook-square{
+    color: blue;
+    margin: 0;
+    padding: 10px 142px;
+}
+
+.fa-twitter{
+    color: rgb(0, 183, 255);
+    margin: 0;
+    padding: 10px 142px;
+}
+
+.fa-youtube-play{
+    color: red;
+    margin: 0;
+    padding: 10px 142px;
+}
+
+.fa-instagram{
+    color: orange;
+    margin: 0;
+    padding: 10px 142px;
+}
+
 /* Places the navbar at the bottom of the page */
+.navbar {
+    background-color: #ddd;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+}
+
 .navbar a {
     float: left;
+    display: block;
     color: #4F3AE4;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     width: 25%;
 }
-  
+
 /* Changes the color of links on hover */
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #E8E5F9;
     color: black);
 }
   
@@ -98,4 +166,5 @@ button{
 .navbar a.active {
     background-color: #ddd;
     color: #4F3AE4;
-  }
+}
+

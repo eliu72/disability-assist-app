@@ -18,12 +18,46 @@
 <body>
 
     <div class="container">
-        <img src="./images/location-pin.png">
-        <h1>Using your Location</h1>
-        <p>Click allow so that I know where you are located.</p>
-        <button onclick="getLocation()">Allow</button>
+        <h1>Welcome to Hartsfield Jackson Atlanta Airport:<br>Concourse C</h1>
+        <br>
+        <img src="./images/Hartsfield-Jackson.png">
+       
+        <br>
+        <br>
+
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <div class="audio-description">
+            <a href="#">
+                <i class="fa fa-audio-description fa-2x" aria-hidden="true"></i></a>
+        </div>
+
+        <h3>DESCRIPTION: <br>A photo of Hartsfield-Jackson's main hall is displayed. The main hall is comprised of 3 levels inside an oval shaped building.</h3>
+
+        <h3>DIRECTIONS: <br>Click the "Find My Location" button below to allow access to your location. Then, click the "Next" button at the very bottom of the page.</h3>
+
+        <br>
+
+        <button class = "find-location" onclick="getLocation()">Find My Location</button>
         <button class="btn-purple" onclick="location.href='places.html';">Next</button>
-        <button class="btn-black">Go back</button>
+
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <div class="navbar">
+                <a class="active" style="font-weight:bold" href="#">
+                    <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i><br>Explore</a>
+                    
+                <a style="font-weight:bold" href="#">
+                    <i class="fa fa-heart fa-lg" aria-hidden="true"></i><br>Favorites</a>
+                
+                <a style="font-weight:bold" href="#">
+                    <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i><br>Alerts</a>
+                    
+                <a style="font-weight:bold" href="#">
+                    <i class="fa fa-cog fa-lg" aria-hidden="true"></i><br>Settings</a>
+            </div>
     </div>
 
     <!-- Javascript -->

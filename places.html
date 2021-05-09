@@ -21,36 +21,52 @@
     <section id="places-list">
         <div class="container">
             <div class="row">
-                <h4><center>Popular Routes at <br>ATL Concourse C</center></h3>
+                <h1>Popular Routes in Hartsfield Jackson: <br>Concourse C<br><br></h1>
+                
+                <img src="./images/Hartsfield-Jackson.png">
+
+                <div><br></div>
+
+                <link rel="stylesheet" 
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                
+                <div class="audio-description">
+                    <a href="#">
+                        <i class="fa fa-audio-description fa-2x" aria-hidden="true"></i></a>
+                </div>
+
+                <h3>DESCRIPTION: <br>In the middle of the page is a dropdown selection with 37 routes. Once you are happy with your selection, please continue to the next page by pressing the "Submit" button on the immediate right of the dropdown menu.</h3>
             </div>
             <br>
 
-            <div class="row list">
+            <div class="row-list">
                 <form id="places" action="javascript:calculatePath()" name="places" method="post">
                     <select></select>
-                    <input type="submit" value="submit"/>
+                    <!-- 
+                    <input type="submit" value="Submit"/>
+                    -->
                 </form>
             </div>
-
-            <button class="btn-black">Choose a different route</button>
-
+            
+            <button class="btn-purple" onclick="javascript:calculatePath()">
+                Submit
+            </button>
+            
             <link rel="stylesheet" 
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-            <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
             <div class="navbar">
                 <a class="active" style="font-weight:bold" href="#">
-                    <i class="fa fa-fw fa-search"></i><br>Explore</a>
-                    <br>
+                    <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i><br>Explore</a>
+                    
                 <a style="font-weight:bold" href="#">
-                    <i class="fa fa-fw fa-search"></i><br>Favorites</a>
-                    <br>
+                    <i class="fa fa-heart fa-lg" aria-hidden="true"></i><br>Favorites</a>
+                
                 <a style="font-weight:bold" href="#">
-                    <i class="fa fa-fw fa-envelope"></i><br>Alerts</a>
-                    <br>
+                    <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i><br>Alerts</a>
+                    
                 <a style="font-weight:bold" href="#">
-                    <i class="fa fa-fw fa-user"></i><br>Settings</a>
-                    <br>
+                    <i class="fa fa-cog fa-lg" aria-hidden="true"></i><br>Settings</a>
             </div>
         </div>
     </section>
