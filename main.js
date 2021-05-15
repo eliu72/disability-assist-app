@@ -156,26 +156,18 @@ function getCurrDirection(){
     }
 }
 
-
-// function that speaks the current direction
-function speak() {
-
-    // speech synthesis
-    // https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API#demo
+// speech synthesis
+// https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API#demo
+function audio(textContent){
+    // create default settings
     var synth = window.speechSynthesis;
-
-    var defaultTxt = "When you have arrived at your destination, double tap the middle of your screen.";
     var voiceSelect = "en-US";
-
     var pitch = 1;
     var rate = 0.9;
-
     var voices = synth.getVoices();
-  
+
     // utterThis is a speech synthesis utterance object
-    var inputTxt = defaultTxt + getCurrDirection();
-    console.log(inputTxt);
-    var utterThis = new SpeechSynthesisUtterance(inputTxt);
+    var utterThis = new SpeechSynthesisUtterance(textContent);
 
     // set the voice to en-US
     for (var i = 0; i < voices.length; i++){
@@ -190,12 +182,16 @@ function speak() {
 
     // speak it!
     synth.speak(utterThis);
+}
 
-    // utterThis.onpause = function(event) {
-    //     var char = event.utterance.text.charAt(event.charIndex);
-    //     console.log('Speech paused at character ' + event.charIndex + ' of "' +
-    //     event.utterance.text + '", which is "' + char + '".');
-    // }
+
+// function that speaks the current direction
+function speak() {
+
+    var defaultTxt = "When you have arrived at your destination, double tap the middle of your screen.";  
+    var inputTxt = defaultTxt + getCurrDirection();
+    audio(inputTxt);
+
 }
 
 // detect double tap on screen
